@@ -236,6 +236,16 @@ a.nosto-button:hover span {
   padding: 10px 16px;
 }
 
+.nav-tabs .nav-link:hover {
+  color: #131e28;
+  background-color: #cc0586;
+    font-weight: 600;
+}
+
+.tab-content {
+  border-bottom: #A3A3A3;
+}
+
 /* * * * * * * * * * * * * * * * * * * */
 /* * * * * 03. ICONS & IMAGES * * * * */
 /* * * * * * * * * * * * * * * * * * * */
