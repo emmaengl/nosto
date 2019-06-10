@@ -26,9 +26,11 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* 1a CONTAINERS & SECTIONS */
 .hero-section {
+background-attachment: fixed;
 background: url(https://cdn.www.nosto.com/wp-content/uploads/woodhouse-hero.jpg) right center no-repeat;
 background-size: cover;
 display: block;
+margin-top: 56px;
 }
 
 .hero-section .row {
@@ -52,8 +54,49 @@ a {
 }
 
 /* 2b HEADINGS */
+h1, h2 {
+  font-family: "Arvo", Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
 
+h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+.case-study-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.case-study-stat {
+  color: #7c65ee;
+  font-family: "Arvo", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.quote-text {
+  font-size: 1.17rem;
+}
+
+.hero-title {
+  color: #fff;
+}
+
+.hero-description {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
 /* 2c NAVIGATION */
+.navbar {
+  background-color: #fff;
+}
+
 .navbar-light .navbar-nav .nav-link,
 .dropdown-item,
 .dropdown-item:focus,
