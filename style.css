@@ -41,7 +41,6 @@ margin-top: 56px;
 /* * * * * 02. TYPOGRAPHY * * * * */
 /* * * * * * * * * * * * * * * * * */
 /* 2a BODY TEXT */
-
 body {
   color: #131e28;
   font-family: "Gotham A", "Montserrat", Arial, sans-serif;
@@ -67,6 +66,16 @@ h3 {
   font-size: 1.17rem;
 }
 
+.hero-title {
+  color: #fff;
+}
+
+.hero-description {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .case-study-title {
   font-size: 1rem;
   text-transform: uppercase;
@@ -79,19 +88,7 @@ h3 {
   font-weight: 600;
 }
 
-.quote-text {
-  font-size: 1.17rem;
-}
 
-.hero-title {
-  color: #fff;
-}
-
-.hero-description {
-  color: #fff;
-  font-size: 16px;
-  line-height: 1.5;
-}
 /* 2c NAVIGATION */
 .navbar {
   background-color: #fff;
@@ -130,7 +127,8 @@ h3 {
 }
 
 /* 2d Buttons */
-.nosto-button {
+.nosto-button,
+.nosto-button-inverse {
   background-image: -webkit-gradient(linear, left top, right top, from(#cc0586), to(#7c65ee));
     background-image: linear-gradient(to right, #cc0586 0%, #7c65ee 100%);
     background-image: -ms-linear-gradient(to right, #cc0586 0%, #7c65ee 100%);
@@ -149,6 +147,18 @@ h3 {
     transition: all .5s ease;
 }
 
+.nosto-button-inverse {
+  padding: 12px 24px;
+}
+
+a.nosto-button:hover,
+a.nosto-button-inverse:hover {
+  background-image: linear-gradient(to right, #cc0586 0%, #cc0586 100%);;
+  color:#fff;
+  text-decoration: none;
+}
+
+
 .nosto-button span {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -166,6 +176,12 @@ h3 {
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     padding: 10px 16px;
+}
+
+.nosto-button-inverse span,
+a.nosto-button:hover span {
+  background: transparent;
+  color: #fff;
 }
 
 /* 2e Tabs */
