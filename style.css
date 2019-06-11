@@ -69,7 +69,6 @@ a {
 }
 
 .case-study-stat {
-  /* color: #6142d2; */
   font-family: "Arvo", Helvetica, Arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
@@ -139,7 +138,6 @@ h3 {
 
 /* 2d Buttons */
 .nosto-button,
-.nosto-button-inverse,
 .nosto-button-outline {
   background-image: -webkit-gradient(linear, left top, right top, from(#cc0586), to(#7c65ee));
   background-image: linear-gradient(to right, #cc0586 0%, #7c65ee 100%);
@@ -159,28 +157,6 @@ h3 {
   transition: all .5s ease;
 }
 
-.nosto-button-inverse {
-  padding: 12px 54px;
-}
-
-.nosto-button-outline {
-  background-image: none;
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 12px 24px;
-}
-
-a.nosto-button-outline:hover {
-  background-color: #fff;
-
-
-  text-decoration: none;
-}
-
-a.nosto-button-outline:hover span {
-  color: #cc0586;
-}
-
 .nosto-button span {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -197,10 +173,25 @@ a.nosto-button-outline:hover span {
   padding: 10px 16px;
 }
 
-.nosto-button-inverse span,
 a.nosto-button:hover span {
   background: transparent;
   color: #fff;
+}
+
+.nosto-button-outline {
+  background-image: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 24px;
+}
+
+a.nosto-button-outline:hover {
+  background-color: #fff;
+  text-decoration: none;
+}
+
+a.nosto-button-outline:hover span {
+  color: #cc0586;
 }
 
 /* 2e Tabs */
@@ -310,11 +301,13 @@ a.nosto-button:hover span {
     padding-left: 0;
     padding-right: 0;
   }
+
   .navbar-expand-lg .navbar-nav .nav-link.nosto-button {
     padding-left: 2px;
     padding-right: 2px;
   }
 }
+
 /* 4e Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .container {
