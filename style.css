@@ -37,12 +37,16 @@
   height: 600px;
 }
 
-.quote-section {
+.stats-section {
   background-attachment: fixed;
   background-image: -webkit-gradient(linear, left top, right top, from(#cc0586), to(#7c65ee));
   background-image: linear-gradient(to right, #cc0586 0%, #7c65ee 100%);
   background-image: -ms-linear-gradient(to right, #cc0586 0%, #7c65ee 100%);
   color: #fff;
+}
+
+.footer-section {
+  background-color: #f9fafa;
 }
 
 /* * * * * * * * * * * * * * * * * */
@@ -56,17 +60,22 @@ body {
   line-height: 1.75;
 }
 
+p {
+  margin-bottom: 2rem;
+}
+
 a {
   background-color: transparent;
 }
 
 .case-study-stat {
-  color: #7c65ee;
+  /* color: #6142d2; */
   font-family: "Arvo", Helvetica, Arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
 }
 
+.footer-text,
 .sm-text {
   font-size: 12px;
   line-height: 1.3;
@@ -76,6 +85,7 @@ a {
 h1, h2 {
   font-family: "Arvo", Helvetica, Arial, sans-serif;
   font-style: italic;
+  margin-bottom: 1.5rem;
 }
 
 h3, h4, h5, h6 {
@@ -84,6 +94,7 @@ h3, h4, h5, h6 {
 
 h3 {
   font-size: 1.17rem;
+  margin-bottom: 1rem;
 }
 
 .hero-title {
@@ -109,11 +120,6 @@ h3 {
   color: #131e28;
 }
 
-.navbar-nav .nav-link {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
 .nav-item {
   align-self: center;
   padding: 0 10px;
@@ -133,7 +139,8 @@ h3 {
 
 /* 2d Buttons */
 .nosto-button,
-.nosto-button-inverse {
+.nosto-button-inverse,
+.nosto-button-outline {
   background-image: -webkit-gradient(linear, left top, right top, from(#cc0586), to(#7c65ee));
   background-image: linear-gradient(to right, #cc0586 0%, #7c65ee 100%);
   background-image: -ms-linear-gradient(to right, #cc0586 0%, #7c65ee 100%);
@@ -156,11 +163,22 @@ h3 {
   padding: 12px 54px;
 }
 
-a.nosto-button:hover,
-a.nosto-button-inverse:hover {
-  background-image: linear-gradient(to right, #cc0586 0%, #cc0586 100%);
+.nosto-button-outline {
+  background-image: none;
+  border: 2px solid #fff;
   color: #fff;
+  padding: 12px 24px;
+}
+
+a.nosto-button-outline:hover {
+  background-color: #fff;
+
+
   text-decoration: none;
+}
+
+a.nosto-button-outline:hover span {
+  color: #cc0586;
 }
 
 .nosto-button span {
@@ -176,9 +194,6 @@ a.nosto-button-inverse:hover {
   -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
-  -webkit-transition: background .5s ease;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
   padding: 10px 16px;
 }
 
@@ -238,12 +253,22 @@ a.nosto-button:hover span {
 
 .nav-tabs .nav-link:hover {
   color: #131e28;
-  background-color: #cc0586;
-    font-weight: 600;
+  background-color: #7c65ee;
+  font-weight: 600;
 }
 
 .tab-content {
   border-bottom: #A3A3A3;
+}
+
+.card-header {
+  background-color: #fff;
+}
+
+.btn-link {
+  font-weight: 600;
+  color: #A3A3A3;
+  text-transform: uppercase;
 }
 
 /* * * * * * * * * * * * * * * * * * * */
@@ -251,6 +276,14 @@ a.nosto-button:hover span {
 /* * * * * * * * * * * * * * * * * * * */
 .nosto-logo {
   max-width: 130px;
+}
+
+.solution-section img {
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(85, 91, 92, 0.13);
+  box-shadow: 0px 5px 20px 0px rgba(85, 91, 92, 0.13);
+  max-width: 100%;
+  margin-bottom: 2rem;
 }
 
 /* Quote Icon */
@@ -272,9 +305,29 @@ a.nosto-button:hover span {
 }
 
 /* 4d Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link.nosto-button {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
 /* 4e Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .container {
     max-width: 1250px;
+  }
+
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-expand-xl .navbar-nav .nav-link.nosto-button {
+    padding-left: 2px;
+    padding-right: 2px;
   }
 }
